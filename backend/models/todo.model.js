@@ -9,7 +9,7 @@ const todoSchema = new mongoose.Schema({
     type: Boolean,
     required: true,
   },
-});
+},{timestamps:true})
 
 const TODO = mongoose.model("TODO", todoSchema);
 export default TODO;
